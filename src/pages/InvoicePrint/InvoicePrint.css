@@ -1,0 +1,328 @@
+.print-loader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 16px;
+}
+
+.print-loader-text {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.print-error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 16px;
+  padding: 24px;
+}
+
+.print-error-icon {
+  font-size: 48px;
+}
+
+.print-error-message {
+  font-size: 15px;
+  color: var(--color-danger);
+  font-weight: 600;
+}
+
+.print-page-container {
+  background-color: #ffffff;
+  min-height: 100vh;
+  color: #000000;
+  font-family: var(--font-sans);
+}
+
+.print-controls-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 56px;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  z-index: 999;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.print-controls-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.print-back-btn {
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+}
+
+.print-divider-line {
+  height: 16px;
+  width: 1px;
+  background-color: rgba(255,255,255,0.2);
+}
+
+.print-preview-mode-title {
+  font-size: 13px;
+  color: rgba(255,255,255,0.7);
+}
+
+.print-invoice-btn {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  border: 1px solid #1a1a1a;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 6px 16px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-family: var(--font-sans);
+}
+
+.print-invoice-btn:hover {
+  background-color: #f8f9fa;
+}
+
+.print-sheet-body {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 96px 40px 40px 40px;
+  box-sizing: border-box;
+}
+
+.print-header-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.print-company-logo {
+  height: 56px;
+  max-width: 180px;
+  object-fit: contain;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.print-company-fallback-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 12px 0;
+  letter-spacing: -0.5px;
+}
+
+.print-company-details {
+  font-size: 12px;
+  line-height: 1.6;
+  color: #555555;
+}
+
+.print-company-address {
+  white-space: pre-wrap;
+  max-width: 300px;
+}
+
+.print-invoice-id-panel {
+  text-align: right;
+}
+
+.print-invoice-type {
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 8px 0;
+  letter-spacing: -0.5px;
+}
+
+.print-invoice-number {
+  font-size: 15px;
+  font-weight: 600;
+  color: #333333;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.print-invoice-meta {
+  font-size: 12px;
+  line-height: 1.6;
+  color: #555555;
+}
+
+.print-sheet-divider {
+  border: none;
+  border-top: 1px solid #e5e5e5;
+  margin: 30px 0;
+}
+
+.print-billing-details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.print-billing-label {
+  font-size: 10px;
+  font-weight: 600;
+  color: #888888;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.print-billing-info {
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.print-billing-name {
+  font-size: 14px;
+  color: #111111;
+}
+
+.print-billing-subtext {
+  margin-top: 4px;
+  color: #444444;
+}
+
+.print-billing-city {
+  color: #444444;
+}
+
+.print-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  margin-bottom: 32px;
+}
+
+.print-table-header-row {
+  border-bottom: 2px solid #333333;
+  text-align: left;
+}
+
+.print-table-th {
+  padding: 8px 0;
+  font-weight: 600;
+}
+
+.print-table-row {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.print-table-td {
+  padding: 10px 0;
+}
+
+.print-table-td-name {
+  font-size: 13px;
+  color: #111111;
+  display: block;
+}
+
+.print-table-td-desc {
+  color: #666666;
+  font-size: 11px;
+  display: block;
+  margin-top: 2px;
+}
+
+.print-summary-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.print-notes-section {
+  margin-bottom: 24px;
+}
+
+.print-notes-label {
+  font-size: 10px;
+  font-weight: 600;
+  color: #888888;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.print-notes-p {
+  font-size: 11px;
+  color: #555555;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.print-business-thanks {
+  font-size: 11px;
+  color: #888888;
+  font-style: italic;
+}
+
+.print-calculation-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 12px;
+}
+
+.print-calc-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.print-calc-total-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-top: 2px solid #111111;
+  font-size: 15px;
+}
+
+.print-total-billed-value {
+  font-size: 18px;
+  color: #111111;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body, html {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .print-sheet-body {
+    padding: 0 !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}

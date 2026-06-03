@@ -1,0 +1,112 @@
+.desktop-table-container {
+  display: block;
+  width: 100%;
+}
+
+.mobile-cards-container {
+  display: none;
+}
+
+.grid-row-hover:hover {
+  background-color: rgba(26, 26, 26, 0.015) !important;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(26, 26, 26, 0.1);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(26, 26, 26, 0.2);
+}
+
+.invoice-header-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.invoice-header-grid-secondary {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.dashboard-widgets-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.5fr 1.25fr;
+  gap: 20px;
+  margin-bottom: 28px;
+}
+
+.billed-highlight-band {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border-radius: 6px;
+  padding: 16px 20px;
+  margin-top: 8px;
+}
+
+@media (max-width: 768px) {
+  .dashboard-widgets-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+  
+  .invoice-header-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+  
+  .invoice-header-grid-secondary {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+    margin-top: 16px !important;
+  }
+
+  .desktop-table-container {
+    display: none !important;
+  }
+
+  .mobile-cards-container {
+    display: flex !important;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+  }
+
+  .editor-lines-mobile-card {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+  
+  .editor-lines-mobile-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  
+  .totals-panel-responsive-wrapper {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+}

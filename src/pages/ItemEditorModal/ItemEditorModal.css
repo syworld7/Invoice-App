@@ -1,0 +1,239 @@
+.item-modal-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.item-modal-paper {
+  width: 100%;
+  max-width: 520px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  position: relative;
+  outline: none;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+}
+
+.item-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 28px 20px;
+}
+
+.item-modal-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #262626;
+  margin: 0;
+  letter-spacing: -0.2px;
+}
+
+.item-modal-close-btn {
+  background: none;
+  border: none;
+  color: #6c757d;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.item-modal-close-btn:disabled {
+  cursor: not-allowed;
+}
+
+.item-modal-divider {
+  height: 1px;
+  background-color: #e9ecef;
+  margin-bottom: 0;
+}
+
+.item-modal-alert-error {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  background-color: rgba(220, 53, 69, 0.06);
+  border-bottom: 1px solid rgba(220, 53, 69, 0.2);
+  color: #dc3545;
+  padding: 12px 28px;
+  font-size: 13px;
+}
+
+.item-modal-loader-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 240px;
+}
+
+.item-modal-form-body {
+  padding: 24px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.item-modal-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #262626;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.item-modal-pic-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.item-modal-pic-preview {
+  width: 90px;
+  height: 90px;
+  border-radius: 6px;
+  border: 1px solid #d0d5dd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f5f7;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.item-modal-pic-input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-top: 4px;
+}
+
+.item-modal-pic-input {
+  fontSize: 13px;
+  color: #262626;
+  font-family: var(--font-sans);
+  cursor: pointer;
+}
+
+.item-modal-pic-hint {
+  font-size: 11px;
+  color: #6c757d;
+}
+
+.item-modal-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 9px 12px;
+  border: 1px solid #d0d5dd;
+  border-radius: 6px;
+  font-size: 13px;
+  color: #262626;
+  background-color: #ffffff;
+  outline: none;
+  font-family: var(--font-sans);
+  transition: border-color 0.15s;
+}
+
+.item-modal-input:focus {
+  border-color: #262626;
+}
+
+.item-modal-input-error {
+  border-color: #dc3545 !important;
+}
+
+.item-modal-error-message {
+  font-size: 11px;
+  color: #dc3545;
+  margin-top: 4px;
+  display: block;
+}
+
+.item-modal-desc-wrapper {
+  position: relative;
+}
+
+.item-modal-desc-textarea {
+  resize: vertical;
+  padding-bottom: 24px;
+  min-height: 100px;
+  font-family: var(--font-sans);
+}
+
+.item-modal-desc-counter {
+  position: absolute;
+  right: 12px;
+  bottom: 8px;
+  font-size: 10px;
+  color: #adb5bd;
+  font-weight: 400;
+}
+
+.item-modal-row-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.item-modal-discount-wrapper {
+  position: relative;
+}
+
+.item-modal-discount-symbol {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 13px;
+  color: #6c757d;
+  pointer-events: none;
+}
+
+.item-modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 28px;
+  border-top: 1px solid #e9ecef;
+}
+
+.item-modal-cancel-btn {
+  background: none;
+  border: 1px solid #d0d5dd;
+  border-radius: 6px;
+  padding: 8px 20px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #262626;
+  cursor: pointer;
+  font-family: var(--font-sans);
+  transition: background 0.15s;
+}
+
+.item-modal-cancel-btn:hover {
+  background-color: #f8f9fa;
+}
+
+.item-modal-cancel-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.item-modal-save-btn {
+  border: none;
+  border-radius: 6px;
+  padding: 8px 24px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #ffffff;
+  font-family: var(--font-sans);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.15s;
+}
